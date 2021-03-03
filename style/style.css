@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.header-bar {
+    font-family: Georgia;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 5.625rem;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: #FEDE00;
+    
+    height: 9.375rem;
+}
+
+.header-bar h2 {
+    border: solid 0.125rem black;
+    padding: 0.75rem;
+}
+
+.header-bar p {
+    margin-left: 56.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-right: 5.625rem;
+
+    font-weight: bold;
+}
+
+.app-name {
+    margin-top: 1.875rem;
+    margin-left: 1.875rem;
+}
+
+
+
+
+
+
+/* responsivity */
+
+@media screen and (max-width: 1410px) {
+
+    .header-bar p {
+      font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .header-bar p {
+      margin-left: 800px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .header-bar p {
+      margin-left: 800px;
+    }
+}
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
