@@ -20,13 +20,23 @@
         <p>An app to store the amazing receipes you find or create!</p>
     </header>
 
-    <div class="container">
+    <div class="container" ng-controller="recipeBoxCtrl">
         <!-- for upploading an image -->
         <div>
         </div>
 
-        <div class="receipe-items">
-            
+        <div class="saved-receipes">
+        <ul>
+            <li ng-repeat="recipe in recipeList | filter track by $index">
+                <div>{{recipe.title}}</div>
+                <div>{{recipe.ingredients}}</div>
+                <div>
+                    <div class="recipeBtn">
+                    <button ng-click="editRecipe($index)">Edit</button>
+                    <button ng-click="deleteRecipe($index)">Delete</button>
+                </div>
+            </li>
+        </ul>
 
         </div>
     </div>
